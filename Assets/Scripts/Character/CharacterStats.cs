@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class CharacterStats : MonoBehaviour
 {
     public UnityEvent<int> IntelligenceChange;
-    [SerializeField] private int _intelligence;
+    [SerializeField] private int _intelligence = 10;
     public int GetIntelligence()
     {
         return _intelligence;
@@ -18,7 +18,7 @@ public class CharacterStats : MonoBehaviour
     }
 
     public UnityEvent<int> StrengthChange;
-    [SerializeField] private int _strength;
+    [SerializeField] private int _strength = 5;
     public int Strength
     {
         get => _strength;
